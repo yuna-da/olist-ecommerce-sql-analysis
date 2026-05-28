@@ -40,8 +40,9 @@ Q4. 왜 떠나는가? (원인 후보) →  배송 지연 시 만족도 급락
 
 **제안.** 11월 스파이크 구매층의 재구매 여부를 추적해 "프로모션이 신규 고객 정착으로 이어지는가" 검증. 매출을 "주문 수 × 객단가"로 분해해 성장 동인을 구분 관리.
 
-📄 쿼리: [`sql/q1_monthly_trend.sql`](sql/q1_monthly_trend.sql) · 📊 [매출·주문 추이 그래프](images/q1_trend.png)
+📄 쿼리: `sql/q1_monthly_trend.sql`
 
+![매출·주문 추이 그래프](images/q1_trend.png)
 ---
 
 ## Q2. 재구매율 — 데이터 함정 발견·교정
@@ -75,8 +76,9 @@ Q4. 왜 떠나는가? (원인 후보) →  배송 지연 시 만족도 급락
 
 **제안.** 이탈이 첫 달에 집중되므로 **리텐션 개입의 골든타임은 첫 구매 직후 30일.** 이 구간에 재구매 트리거(만족도 확인·연관 추천·기간 한정 인센티브)를 집중 배치.
 
-📄 쿼리: [`sql/q3_cohort_retention.sql`](sql/q3_cohort_retention.sql) · 📊 [코호트 히트맵](images/q3_cohort_heatmap.png)
+📄 쿼리: `sql/q3_cohort_retention.sql`
 
+![코호트 히트맵](images/q3_cohort_heatmap.png)
 ---
 
 ## Q4. 배송 지연 → 리뷰 평점 영향 (인사이트 & 액션)
